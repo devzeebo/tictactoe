@@ -1,6 +1,6 @@
 public interface IBoardSpace
 {
-    IToken Token { get; protected set; }
+    IToken Token { get; }
 
     void placeToken(IToken token);
     void Reset();

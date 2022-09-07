@@ -1,3 +1,3 @@
 public interface IPlayer {
-    IToken Token { get; protected set; }
+    IToken Token { get; }
 }
