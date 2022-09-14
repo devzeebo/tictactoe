@@ -1,7 +1,7 @@
 public interface IGame {
     IEnumerable<IPlayer> Players { get; }
     IPlayer CurrentPlayer { get; }
-    IBoardSpace Board { get; }
+    IBoardSpace[,] Board { get; }
 
     GameState GameState { get; }
 
