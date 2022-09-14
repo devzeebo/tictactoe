@@ -6,15 +6,11 @@ public class BoardSpace : IBoardSpace
 
     public void PlaceToken(IToken token)
     {
-        if (Token != null) {
-            throw new IllegalMoveException();
-        }
-
-        Token = token;
+        throw new NotImplementedException();
     }
 
     public void Reset()
     {
-        Token = null;
+        throw new NotImplementedException();
     }
 }

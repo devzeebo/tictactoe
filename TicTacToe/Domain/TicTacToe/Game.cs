@@ -8,17 +8,6 @@ public class Game : IGame
     public Game(
         IEnumerable<IPlayer> players
     ) {
-        Players = players;
-        CurrentPlayer = players.First();
-
-        GameState = GameState.Active;
-
-        Board = new BoardSpace[3,3];
-        for (int r = 0; r < 3; r++) {
-            for (int c = 0; c < 3; c++) {
-                Board[r, c] = new BoardSpace();
-            }
-        }
     }
 
     public void Render(TextWriter stream)
@@ -28,13 +17,6 @@ public class Game : IGame
 
     public void TakeTurn(int r, int c)
     {
-        Board[r,c].PlaceToken(CurrentPlayer.Token);
-
-        if (CurrentPlayer == Players.First()) {
-            CurrentPlayer = Players.Last();
-        }
-        else {
-            CurrentPlayer = Players.First();
-        }
+        throw new NotImplementedException();
     }
 }
